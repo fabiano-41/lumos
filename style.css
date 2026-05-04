@@ -196,9 +196,134 @@ section {
   margin-bottom: 10px;
 }
 
+
 /* FOOTER */
 footer {
   background: #050d25;
   padding: 20px;
   text-align: center;
+}
+
+/* RESPONSIVO TABLET */
+@media (max-width: 900px) {
+  nav {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu a {
+    margin: 5px;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .botoes {
+    left: 40px;
+    bottom: 40px;
+  }
+
+  .conteudo-hero h1 {
+    font-size: 32px;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+}
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 600px) {
+  nav {
+    padding: 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .menu a {
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  .btn1 {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .hero {
+    height: 75vh;
+    border-bottom-left-radius: 8% 20px;
+    border-bottom-right-radius: 8% 20px;
+  }
+
+  .botoes {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botoes button {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .conteudo-hero h1 {
+    font-size: 26px;
+  }
+
+  .conteudo-hero p {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 40px 5%;
+  }
+
+  .paragrafo {
+    font-size: 16px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 18px;
+  }
 }
